@@ -3,16 +3,22 @@ const app = express();
 const bodyParser = require('body-parser');
 const nunjucks = require('nunjucks');
 const db = require('./models');
+const path = require('path');
 
 app.use(require('volleyball'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, '/public')));
+app.use('/bootstrap', express.static(path.join(__dirname, '/node_modules/bootstrap/dist')));
+app.use('/jquery', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
 
 // nunjucks rendering boilerplate
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
 nunjucks.configure('views', { noCache: true });
+
+
+
 
 app.use(require('./routes'));
 

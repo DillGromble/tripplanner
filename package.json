@@ -5,18 +5,24 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "start-dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "nodemon -e html,css,js app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "node-sass -w -r assets/stylesheets/styles.scss -o public/stylesheets"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
     "express": "^4.15.2",
+    "jquery": "^3.2.1",
     "nunjucks": "^3.0.0",
     "pg": "^6.1.5",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.30.4",
     "volleyball": "^1.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2"
   }
 }

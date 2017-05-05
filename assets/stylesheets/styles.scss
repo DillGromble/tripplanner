@@ -1,0 +1,76 @@
+
+// navbar styles
+.navbar-default {
+  background-color: #716458;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  .navbar-brand{
+    color: #a6bfc1;
+  }
+  .navbar-nav {
+    li>a {
+      color: #a6bfc1;
+    }
+    .active>a {
+      background-color: #62574d;
+      color: #c1dae8;
+    }
+  }
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+#map {
+  background-color: blue;
+  height: 70vh;
+  min-height: 600px;
+}
+
+.sidebar {
+  background-color: #beb4ac;
+  height: 70vh;
+  min-height: 600px;
+}
+
+#dropdowns {
+  margin: 15px -3px 10px -3px;
+  background-color: #efecea;
+  border-radius: 5%;
+  height: 40%;
+
+  .glyphicon {
+    font-size: 20px;
+    color: #6c95bd;
+    font-weight: bold;
+  }
+}
+
+label {
+  display: block;
+  text-align: left;
+  padding: 20px 10px 0 10px;
+  font-size: 20px;
+  color: #babab9;
+  font-weight: normal;
+}
+
+select {
+  display: inline;
+  margin: 0px 7px 0 10px;
+  width: 85%;
+}
+
+#dayNum {
+  height: 8%;
+  background-color: white;
+  margin: 35px 92px;
+  border-radius: 5%;
+}

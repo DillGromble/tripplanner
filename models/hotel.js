@@ -16,8 +16,7 @@ const Hotel = db.define('hotel', {
     }
   },
   ammenities: {
-    type: Sequelize.STRING,
-    allowNull: false
+    type: Sequelize.STRING
   }
 })
 
