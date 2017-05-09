@@ -28,7 +28,7 @@
   margin: 0;
 }
 
-#map {
+#map-canvas {
   background-color: blue;
   height: 70vh;
   min-height: 600px;
@@ -70,7 +70,8 @@ select {
 
 #dayNum {
   height: 8%;
-  background-color: white;
-  margin: 35px 92px;
-  border-radius: 5%;
+  background-color:#beb4ac;
+  margin: 35px 100px;
+  border-radius: 15%;
+  border: 1px solid;
 }
